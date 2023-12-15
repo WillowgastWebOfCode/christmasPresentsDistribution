@@ -9,9 +9,10 @@ unsigned long varianceTimeInBetweenPresents = 360000; // 6 minuten
 PersonLight nadia     = PersonLight(2);
 PersonLight claudia   = PersonLight(3);
 PersonLight arthur    = PersonLight(4);
-PersonLight groepje   = PersonLight(5);// Huiscadeau, Selena, Baby of Waffles
+PersonLight selena    = PersonLight(5);
 PersonLight nathalia  = PersonLight(6);
 PersonLight iris      = PersonLight(7);
+PersonLight Noella    = PersonLight(9); // TODO hardware: Check if this pin is available
 Speaker speaker       = Speaker(8);
 Timer timer           = Timer(averageTimeInBetweenPresents, varianceTimeInBetweenPresents);
 RandomSelector randomSelector = RandomSelector();
@@ -35,13 +36,16 @@ void loop() {
         arthur.lightUp();
         break;
       case(4): // Huiscadeau, Selena, baby of Waffles
-        groepje.lightUp();
+        selena.lightUp();
         break;
       case(5): // Nathalia
         nathalia.lightUp();
         break;
       case(6): // Iris
         iris.lightUp();
+        break;
+      case(7): // Noëlla
+        noella.lightUp();
         break;
     }
     
@@ -53,7 +57,8 @@ void loop() {
     iris.lightDown();
     claudia.lightDown();
     arthur.lightDown();
-    groepje.lightDown();
+    selena.lightDown();
+    Noella.lightDown();
   }
   delay(100);
 }

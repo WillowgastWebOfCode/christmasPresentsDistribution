@@ -7,7 +7,7 @@ public:
   int PickAPerson();
 private:  
   void ShowResults(int numberOfPresents, int pickedPresent);
-  int _numberOfPeople = 6;
-  int _numberOfPresentsPerPerson[6] = {16,15,14,21,17,13};
+  int _numberOfPeople = 7;
+  int _numberOfPresentsPerPerson[_numberOfPeople] = {16,15,14,21,17,13, 1};
 };
 #endif
