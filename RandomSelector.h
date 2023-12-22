@@ -8,6 +8,6 @@ public:
 private:  
   void ShowResults(int numberOfPresents, int pickedPresent);
   int _numberOfPeople = 6;
-  int _numberOfPresentsPerPerson[6] = {16,15,14,21,17,13};
+  int _numberOfPresentsPerPerson[6] = {11,10,10,12,10,10};
 };
 #endif
