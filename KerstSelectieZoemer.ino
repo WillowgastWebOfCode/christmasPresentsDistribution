@@ -3,8 +3,8 @@
 #include "Timer.h"
 #include "RandomSelector.h"
 
-unsigned long averageTimeInBetweenPresents = 540000; // 9 minuten
-unsigned long varianceTimeInBetweenPresents = 360000; // 6 minuten
+unsigned long averageTimeInBetweenPresents = 67/11*60*1000; // 9.8 minuten
+unsigned long varianceTimeInBetweenPresents = 300000; // 6 minuten
 
 PersonLight nadia     = PersonLight(2);
 PersonLight claudia   = PersonLight(3);
